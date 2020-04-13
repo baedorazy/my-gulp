@@ -7,17 +7,24 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
     color: white;
-    font-size: 20px;
-    height: 95vh;
-}
-h1 {
-    margin: 10px 0;
     font-family: monospace;
 }
+
+
+h1 {
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
 img {
     width: 100px;
-    max-width: 50%;
+}
+
+div {
+    margin-top: 10px;
 }
 
 footer {

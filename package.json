@@ -1,14 +1,13 @@
 {
-  "name": "my-gulp2",
+  "name": "super-gulp",
   "version": "1.0.0",
-  "description": "lean gulp",
-  "author": "baedorazy@gmail",
-  "license": "ISC",
+  "main": "gulpfile.babel.js",
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp build",
-    "deploy": "gulp deploy"
+    "build": "gulp build"
   },
+  "author": "baedorazy@gmail.com",
+  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
@@ -19,7 +18,6 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-bro": "^2.0.0",
     "gulp-csso": "^4.0.1",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-image": "^6.1.0",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
