@@ -1,2 +1,6 @@
-# my-gulp
-sass, pug, img, js(ECMAScript 2015), babel, optimization
+# lean gulp4 
+
+scss(+atoprefixer,minify),
+js(babel)
+img(optimization),
+template(pug)
