@@ -10,7 +10,6 @@ import gp_min_css from "gulp-csso";
 import autoprefixer from "gulp-autoprefixer"; // 구형 브라우저지원
 
 //---------set-----------------------
-//  gulp browserify + babelify set
 import babelify from "babelify";
 import gp_bro from "gulp-bro"; //
 //---------set-----------------------
@@ -58,6 +57,8 @@ const img = () =>
         .pipe(gulp.dest(routes.img.dist));
 
 const clean = () => del(["build"]); // 확장자나 폴더명
+// 6강 .deploy
+// const clean = () => del(["build",".publish"]); // 확장자나 폴더명
 
 const styles = () =>
     gulp
@@ -68,7 +69,6 @@ const styles = () =>
             cascade: false
         }))
         .pipe(gulp.dest(routes.scss.dist));
-
 
 const js = () =>
     gulp
@@ -95,3 +95,12 @@ const live = gulp.series([webserver] );
 
 export const dev = gulp.series( [prepare, assets, live] ); // export 해야 package.json 에서 사용가능
 
+// 6 강안됐던 부분 -> .publish는 생김. 서버단 에러남, 94라인 삭제
+/*
+이건 github page에 추가하는 부분.
+import ghPages from "gulp-gh-pages";
+const gh = () => gulp.src('build/** /*').pipe(ghPages());
+export const build = gulp.series( [prepare, assets] );
+export const dev = gulp.series( [build, live] );
+export const deploy = gulp.series([build, gh, clean]); // 마지막 클린은 ph 동작하면 캐시 .publish 폴더 생기는데 그거 삭제 해줌.
+ */
