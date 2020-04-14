@@ -1,5 +1,5 @@
 {
-  "name": "super-gulp",
+  "name": "my-super-gulp",
   "version": "1.0.0",
   "main": "gulpfile.babel.js",
   "scripts": {
