@@ -1,13 +1,13 @@
 ## lean gulp4 My Boilerplate
 
 
-> Jade/pug(template)
+> Pug/Jade(template)
 
-> scss(+atoprefixer,minify),
+> SCSS(+atoprefixer,minify),
 
-> js(babel)
+> Javascript(babel) 
 
-> img(optimization)
+> Image(optimization)
 
 How to use 
 ---
