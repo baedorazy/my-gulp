@@ -1,6 +1,16 @@
-# lean gulp4 
+## lean gulp4 My Boilerplate
 
-scss(+atoprefixer,minify),
-js(babel)
-img(optimization),
-template(pug)
+
+> Jade/pug(template)
+
+> scss(+atoprefixer,minify),
+
+> js(babel)
+
+> img(optimization)
+
+How to use 
+---
+1. npm install
+
+2. gulp dev
